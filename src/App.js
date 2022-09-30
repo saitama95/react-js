@@ -1,13 +1,13 @@
 import './App'
-import './Style.css'
-import style from './Custom.module.css'
 import React from 'react'
+import {Alert} from 'react-bootstrap'
 function App(){
   return(
     <div className="App"> 
-      <h1 className="primary">Style type 1 React</h1>
-      <h2 style={{color:'red',backgroundColor:"brown"}}>Inline Style</h2>
-      <h3 className="{style.success}">Style type 3</h3>
+      <h1>Bootstrap</h1>
+        <Alert  variant="warning">
+          This is a   alert—check it out!
+        </Alert>
     </div>
   )
 }
