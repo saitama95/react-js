@@ -1,15 +1,13 @@
 import './App'
-import React,{useState,useEffect} from 'react'
-import Effect from './Effect'
+import './Style.css'
+import style from './Custom.module.css'
+import React from 'react'
 function App(){
-  const [count,setCount] = useState(100)
-  const [data,setData] = useState(10)
-  
   return(
     <div className="App"> 
-      <Effect count = {count} data = {data}/>
-       <button onClick={()=>setCount(count+1)}>Count</button>
-      <button onClick={()=>setData(data+1)}>Data</button>
+      <h1 className="primary">Style type 1 React</h1>
+      <h2 style={{color:'red',backgroundColor:"brown"}}>Inline Style</h2>
+      <h3 className="{style.success}">Style type 3</h3>
     </div>
   )
 }
